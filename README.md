@@ -1,1 +1,260 @@
-# Html&CSS
+<h1>Html&CSS</h1>
+This repo contains of notes I've taken during my learning html and css.
+<hr>
+<h3>The HTML Structure</h3>
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+...
+</head>
+<body>
+...
+</body>
+</html>
+```
+*In the head section --> things we don't see in the page. For example:
+```html
+<title>Title in the tab</title>                   #Sets the title in the tabs
+<link rel="stylesheet" href="styles.css">         #Loads a CSS file to the page
+```
+<h3>CSS Structure</h3>
+One way of writing CSS code is using the <style> HTML element.
+<hr>
+*Attributes modify how an HTML element behaves.
+
+
+Creating links:  
+```html
+<a href="https://youtube.com" target="_blank">Link to YouTube</a>
+
+```
+*target="_blank" causes the link to be opened in a new tab.
+
+Class attribute(lets us target specific elements with CSS):
+```html
+<button class="subscribe-button">SUBSCRIBE</button>
+```
+```css
+.subscribe-button {
+...
+}
+```
+*Multiple elements can have the same class
+
+*An element can have multiple classes, separated by space:
+```html
+<button class="youtube-button subscribe-button">SUBSCRIBE</button>
+```
+
+Buttons creating and styling:
+```html
+<button>Hello</button>     #Creates a button with the text "Hello" inside.
+```
+```css
+<style>
+button {
+background-color: red;                               Sets the background color. Common values:
+                                                                                ● Color name: red, white, black
+                                                                                ● rgb value: rgb(0, 150, 255);
+                                                                                ● Hex value: #0096FF
+
+color: white;                                        Sets the text color. Takes the same values: color name, rgb, hex.
+                                  
+height: 36px;                                        Sets the height. Common values: ● Pixel value: 36px
+                                                                                     ● Percentage: 50%
+
+width: 105px;                                        Sets the width. Takes the same values as height.
+
+border: none;                                        Removes the border.
+
+border-radius: 2px;                                  Creates rounded corners.
+
+cursor: pointer;                                     Changes the mouse/cursor when hovering over the element.
+
+border-color: red;                                   Sets the border color.
+
+border-style: solid;                                 Sets the border style. Common values: ● solid ● dotted ● dashed
+
+border-width: 1px;                                   Sets the border width.
+}
+
+</style>
+```
+CSS Pseudo-Classes:
+```css
+.subscribe-button:hover {                       #These styles only apply when hovering over an element with class="subscribe-button"
+...
+}
+.subscribe-button:active {                      #These styles only apply when clicking on an element with class="subscribe-button"
+...
+}
+```
+Intermediate CSS Properties:
+```css
+.subscribe-button {
+opacity: 0.5;                                    #Sets how see-through an element is: 0.5 = 50% see-through.
+opacity: 0;                                      #0 = complete see-through (invisible).
+opacity: 1;                                      #1 = not see-through (this is the default value).
+
+
+transition: <property> <duration>;               #Transition smoothly when changing styles (often used when hovering).
+
+transition: background-color 1s;                 #Transition background color over 1 second.
+transition: color 0.15s;                         #Transition text color over 0.15 seconds.
+
+transition: <property1> <duration1>,             #Transition multiple properties by separating 
+<property2> <duration2>,                          them with a comma.
+...;
+
+transition: background-color 0.15s,              #Transition both background color and text
+color 0.15s;                                      color over 0.15 seconds.
+
+box-shadow: <h-position> <v-position> <blur> <color>;
+box-shadow: 3px 4px 5px black;                   #Creates a shadow that's 3px to the right of
+                                                  the element, 4px to the bottom, with 5px of
+                                                  blur, and color of black.
+
+box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.15);       #Creates a shadow that's 3px to the right,
+                                                  4px to the bottom, with no blur,
+                                                  and a very faint black color.
+}
+```
+<h3>CSS Box Model</h3>
+
+1. Margin = space on the outside 
+
+2. Padding = space on the inside 
+
+3. Border
+
+```css
+.join-button {
+
+margin-right: 10px;                             #Add 10px of space on the outside of the element.
+margin-left: 10px;
+margin-top: 10px;
+margin-bottom: 10px;                            #Normal margin pushes things away from an element.
+margin-right: -20px;                            #Negative margin pulls things towards an element like this:
+
+margin: 10px;                                   #Shorthand for adding 10px of margin on all sides.
+margin: 10px 20px;                              #Add 10px of margin top & bottom and 20px left & right
+margin: <top> <left & right> <bottom>;
+margin: <top> <right> <bottom> <left>;
+
+padding-right: 10px;                            #Add 10px of space on the inside of the element.
+padding-left: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: -20px;                           #Negative padding has no effect.
+
+padding: 10px;                                  #Shorthand for adding 10px of padding on all sides.
+padding: 10px 20px;                             #Add 10px of padding top & bottom and 20px left & right
+padding: <top> <left & right> <bottom>;
+padding: <top> <right> <bottom> <left>;
+
+border-width: 1px;                              #Sets the border width.
+border-style: solid;                            #Sets the border style (to a solid color).
+border-color: red;                              #Sets the border color.
+border: <width> <style> <color>;                #Shorthand for the 3 properties above.
+border: 1px solid red;
+}
+```
+Text(paragraph) creating and styling:
+```html
+<p>paragraph of text</p>   #Creates a paragraph of text.
+```
+```css
+.title {
+font-family: Arial;                              #Change the font.
+font-family: Roboto, Verdana, Arial;             #A font-stack: if Roboto is not available, it will
+                                                  fall back to Verdana. If Verdana is not
+                                                  available it will fall back to Arial.
+font-size: 30px;                                 #Change text size.
+font-weight: bold;                               #Change text thickness.
+font-weight: 700;                                #Another way to specify font-weight. We can use: 100, 200,
+                                                  300, ..., 900. bold = 700, regular = 400, semibold = 500
+
+font-style: italic;
+text-align: center;                              #Other values we can use: left, right, justified
+line-height: 24px;                               #Adjust space between lines of text.
+text-decoration: underline;                      #Underlines the text.
+text-decoration: none;                           #Removes underline.
+}
+```
+Text Elements (also called Inline Elements):
+
+Text elements (strong, u, span, a) appear within a line of text. (Useful if we want to style only a part of the text.)
+```html
+<p>This is a <strong>text element</strong></p>
+```
+*We can style text elements using a class: (using span)
+```html
+<p>This is a <span class="shop-link">text element</span></p>
+```
+```css
+.shop-link {
+text-decoration: underline;
+}
+```
+*Paragraph element by default have margin-top and margin-bottom. A common practice is to:
+1. Reset the default margins.
+```css
+p {
+margin-top: 0;
+margin-bottom: 0;
+}
+```
+2. Then apply more precise margins.
+```css
+.title {
+margin-bottom: 16px;
+}
+```
+
+Image creating and styling:
+```html
+<img src="image.png">   #Loads an image "image.png" beside the HTML file.
+```
+```css
+.image {
+width: 300px;                             #Resizes the image to a width of 300px. Height will also
+                                           resize to keep the image's dimensions.
+height: 300px;                            #If both width and height are set, the image may stretch.
+
+object-fit: cover;                        #Enlarges the image to cover the entire width * height area
+                                           without stretching or distorting.
+object-fit: contain;                      #Shrinks the image so that it's contained in the width * height area.
+
+object-position: left;                    #Determines where the image is positioned in the width *height area.
+object-position: right;
+object-position: top;
+object-position: bottom;
+}
+```
+
+Inputs:
+```html
+<input type="text" placeholder="Search">       #Creates a text box and adds a placeholder (a label) to the text box.
+<input type="checkbox">                        #Creates a checkbox.
+```
+```css
+.search-bar {
+font-size: 30px;                               #Changes the font-size when typing into the text box.
+}
+.search-bar::placeholder { 
+font-size: 30px;                               #Changes the font-size of the placeholder.  
+}
+```
+
+CSS Display Property:
+```css
+.element {
+display: block;                               #Element will take up the entire line in its container.
+display: inline-block;                        #Element will only take up as much space as needed.
+vertical-align: middle;                       #Determines vertical alignment of inline-block elements.
+display: inline;                              #Element will appear within a line of text (a text element).
+}
+```
+
