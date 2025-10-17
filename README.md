@@ -258,3 +258,26 @@ display: inline;                              #Element will appear within a line
 }
 ```
 
+'div' element:
+*'div' is a container. We generally put other elements (including other divs) inside. 'div's allow us to group elements together and create
+more complex layouts.
+```html
+<div class="container">
+  <p>Name</p>
+  <input type="text">
+</div>
+<div class="container">
+  <p>Quantity</p>
+  <div>
+    <button>1</button>
+    <button>2</button>
+  </div>
+  <button>Submit</button>
+</div>
+```
+```css
+.container {
+display: inline-block;
+width: 200px;
+}
+```
