@@ -281,3 +281,15 @@ display: inline-block;
 width: 200px;
 }
 ```
+Nested Layouts Technique:
+There are 2 types of layouts:
+1. Vertical Layout(=)
+2. Horizontal Layout(||)
+
+To Create the Vertical Layouts -->  
+
+● Use 'div's with display: block (most common)                 ● Use flexbox with flex-direction: column                     ● Use CSS grid with 1 column
+
+To Create the Horizontal Layouts --> 
+
+● Use 'div's with display: inline-block (not recommended)     ● Use flexbox with flex-direction: row                        ● Use CSS grid with multiple columns
