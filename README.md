@@ -288,8 +288,53 @@ There are 2 types of layouts:
 
 To Create the Vertical Layouts -->  
 
-● Use 'div's with display: block (most common)                 ● Use flexbox with flex-direction: column                     ● Use CSS grid with 1 column
+● Use 'div's with display: block (most common)                 
+
+● Use flexbox with flex-direction: column                     
+
+● Use CSS grid with 1 column
 
 To Create the Horizontal Layouts --> 
 
-● Use 'div's with display: inline-block (not recommended)     ● Use flexbox with flex-direction: row                        ● Use CSS grid with multiple columns
+● Use 'div's with display: inline-block (not recommended)     
+
+● Use flexbox with flex-direction: row                        
+
+● Use CSS grid with multiple columns
+
+Inline CSS Styles:
+Another way of writing css, using the style="..." attribute:
+```html
+<div style="
+background-color: red;
+color: white;
+">
+...
+</div>
+```
+CSS Grid:
+```css
+.grid {
+display: grid;                                 #Turns an element into a grid container.
+grid-template-columns: 100px 100px;            #Sets how many columns are in the grid and how wide the columns are.
+column-gap: 20px;                              #Sets space between the columns.
+row-gap: 40px;                                 #Sets space between the rows.
+}
+
+.grid {
+display: grid;
+grid-template-columns: 100px 1fr;              #1fr = the column will take up the remaining
+                                                amount of space in the grid container.
+
+grid-template-columns: 1fr 1fr;                #The columns will take up an equal amount of the
+                                                remaining space (since they're both 1fr).
+
+grid-template-columns: 1fr 2fr;                #The number in front of fr = relatively how much space the column gets.
+                                                Here, the 2nd column gets twice the amount of space as the 1st.
+
+justify-content: center;                       #Aligns the columns horizontally in the center.
+justify-content: space-between;                #Spread out the columns evenly horizontally.
+
+align-items: center;                           #Aligns the columns vertically in the center.
+}
+```
