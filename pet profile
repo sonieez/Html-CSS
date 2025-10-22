@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div class="grid">
+      <div class="preview">
+        <img class="picture" src="https://i0.wp.com/www.communitycatspodcast.com/wp-content/uploads/2023/03/Cat6.jpg">
+        <p class="name">Oliver</p>
+        <div class="description">
+          <img class="profile-picture" src="https://headlines.peta.org/wp-content/uploads/2020/12/ACOM-VIV-Rabbit-Bunny-satyabrata-sm-u_kMWN-BWyU-unsplash-2-scaled.jpeg">
+          <p class="friends">2 mutual friends</p>
+      </div>
+      <button>Add Friend</button>
+    </div>
+
+    <div class="preview">
+        <img class="picture" src="https://www.comfortzone.com/-/media/Project/OneWeb/ComfortZone/Images/Blog/how-can-I-soothe-and-calm-my-cat.jpeg">
+        <p class="name">Mimi</p>
+        <div class="description">
+          <img class="profile-picture" src="https://headlines.peta.org/wp-content/uploads/2020/12/ACOM-VIV-Rabbit-Bunny-satyabrata-sm-u_kMWN-BWyU-unsplash-2-scaled.jpeg">
+          <p class="friends">3 mutual friends</p>
+        </div>
+        <button>Add Friend</button>
+    </div>
+
+    <div class="preview">
+      <img class="picture" src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*">
+        <p class="name">Rex</p>
+        <div class="description">
+          <img class="profile-picture" src="https://headlines.peta.org/wp-content/uploads/2020/12/ACOM-VIV-Rabbit-Bunny-satyabrata-sm-u_kMWN-BWyU-unsplash-2-scaled.jpeg">
+          <p class="friends">4 mutual friends</p>
+        </div>
+        <button>Add Friend</button>
+    </div>
+    </div>
+    
+  </body>
+</html>
