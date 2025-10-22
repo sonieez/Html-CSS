@@ -338,3 +338,51 @@ justify-content: space-between;                #Spread out the columns evenly ho
 align-items: center;                           #Aligns the columns vertically in the center.
 }
 ```
+
+Flexbox:
+```css
+.flexbox {
+display: flex;                               #Turns an element into a flexbox container.
+flex-direction: row;                         #Lays out elements horizontally inside the flexbox. Usually we don't need to
+                                              specify flex-direction: row; because it is the default value.
+
+justify-content: center;                     #Centers the elements in the flexbox horizontally.
+justify-content: space-between;              #Spreads out the elements in the flexbox evenly across the horizontal space.
+
+align-items: center;                         #Centers the elements in the flexbox vertically.
+align-items: space-between;                  #Spreads out elements evenly in the vertical space.
+} 
+ 
+.element-inside-flexbox { 
+width: 100px;                                #Sets the width of the flexbox element to 100px.
+flex: 1;                                     #Take up the remaining amount of space. The value 1 determines relatively how much space.
+flex-shrink: 0;                              *Don't shrink the element when resizing. Allow the element to shrink down when resizing.
+width: 0;
+}
+```
+
+```html
+<div style="                                      #Creates a flexbox where elements are placed
+display: flex;                                     horizontally (flex-direction: row; is the default
+flex-direction: row;                               so it's not mandatory to have that in the CSS)
+">
+
+<p style="width: 100px;">Flexbox element 1</p>      #This element has a width of 100px.
+
+<p style="flex: 1;">Flexbox element 2</p>           #This element takes up 1/3 of the remaining space.
+
+<p style="flex: 2;">Flexbox element 2</p>           #This element takes up 2/3 of the remaining space.
+</div>
+```
+```css
+.flexbox {
+display: flex;                                   #Lays out elements vertically inside the flexbox. Also,
+flex-direction: column;                           justify-content and align-items are reversed.
+ 
+justify-content: center;                         #Centers elements vertically inside the flexbox.
+justify-content: space-between;                  #Spreads out elements evenly in the vertical space.
+
+align-items: center;                             #Centers elements horizontally.
+align-items: space-between;                      #Spreads out elements evenly horizontally.
+}   
+```
