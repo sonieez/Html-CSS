@@ -16,8 +16,8 @@ This repo contains of notes I've taken during my learning html and css.
 ```
 *In the head section --> things we don't see in the page. For example:
 ```html
-<title>Title in the tab</title>                   #Sets the title in the tabs
-<link rel="stylesheet" href="styles.css">         #Loads a CSS file to the page
+<title>Title in the tab</title>                   <!--Sets the title in the tabs-->
+<link rel="stylesheet" href="styles.css">         <!--Loads a CSS file to the page-->
 ```
 <h3>CSS Structure</h3>
 One way of writing CSS code is using the <style> HTML element.
@@ -28,7 +28,6 @@ One way of writing CSS code is using the <style> HTML element.
 Creating links:  
 ```html
 <a href="https://youtube.com" target="_blank">Link to YouTube</a>
-
 ```
 *target="_blank" causes the link to be opened in a new tab.
 
@@ -50,75 +49,75 @@ Class attribute(lets us target specific elements with CSS):
 
 Buttons creating and styling:
 ```html
-<button>Hello</button>     #Creates a button with the text "Hello" inside.
+<button>Hello</button>     <!--Creates a button with the text "Hello" inside.-->
 ```
 ```css
 <style>
 button {
-background-color: red;                               Sets the background color. Common values:
+background-color: red;                               /*Sets the background color. Common values:
                                                                                 ● Color name: red, white, black
                                                                                 ● rgb value: rgb(0, 150, 255);
-                                                                                ● Hex value: #0096FF
+                                                                                ● Hex value: #0096FF*/
 
-color: white;                                        Sets the text color. Takes the same values: color name, rgb, hex.
+color: white;                                        /*Sets the text color. Takes the same values: color name, rgb, hex.*/
                                   
-height: 36px;                                        Sets the height. Common values: ● Pixel value: 36px
-                                                                                     ● Percentage: 50%
+height: 36px;                                        /*Sets the height. Common values: ● Pixel value: 36px
+                                                                                     ● Percentage: 50%*/
 
-width: 105px;                                        Sets the width. Takes the same values as height.
+width: 105px;                                        /*Sets the width. Takes the same values as height.*/
 
-border: none;                                        Removes the border.
+border: none;                                        /*Removes the border.*/
 
-border-radius: 2px;                                  Creates rounded corners.
+border-radius: 2px;                                  /*Creates rounded corners.*/
 
-cursor: pointer;                                     Changes the mouse/cursor when hovering over the element.
+cursor: pointer;                                     /*Changes the mouse/cursor when hovering over the element.*/
 
-border-color: red;                                   Sets the border color.
+border-color: red;                                   /*Sets the border color.*/
 
-border-style: solid;                                 Sets the border style. Common values: ● solid ● dotted ● dashed
+border-style: solid;                                 /*Sets the border style. Common values: ● solid ● dotted ● dashed*/
 
-border-width: 1px;                                   Sets the border width.
+border-width: 1px;                                   /*Sets the border width.*/
 }
 
 </style>
 ```
 CSS Pseudo-Classes:
 ```css
-.subscribe-button:hover {                       #These styles only apply when hovering over an element with class="subscribe-button"
+.subscribe-button:hover {                       /*These styles only apply when hovering over an element with class="subscribe-button"*/
 ...
 }
-.subscribe-button:active {                      #These styles only apply when clicking on an element with class="subscribe-button"
+.subscribe-button:active {                      /*These styles only apply when clicking on an element with class="subscribe-button"*/
 ...
 }
 ```
 Intermediate CSS Properties:
 ```css
 .subscribe-button {
-opacity: 0.5;                                    #Sets how see-through an element is: 0.5 = 50% see-through.
-opacity: 0;                                      #0 = complete see-through (invisible).
-opacity: 1;                                      #1 = not see-through (this is the default value).
+opacity: 0.5;                                    /*Sets how see-through an element is: 0.5 = 50% see-through.*/
+opacity: 0;                                      /*0 = complete see-through (invisible).*/
+opacity: 1;                                      /*1 = not see-through (this is the default value).*/
 
 
-transition: <property> <duration>;               #Transition smoothly when changing styles (often used when hovering).
+transition: <property> <duration>;               /*Transition smoothly when changing styles (often used when hovering).*/
 
-transition: background-color 1s;                 #Transition background color over 1 second.
-transition: color 0.15s;                         #Transition text color over 0.15 seconds.
+transition: background-color 1s;                 /*Transition background color over 1 second.*/
+transition: color 0.15s;                         /*Transition text color over 0.15 seconds.*/
 
-transition: <property1> <duration1>,             #Transition multiple properties by separating 
-<property2> <duration2>,                          them with a comma.
+transition: <property1> <duration1>,             /*Transition multiple properties by separating them with a comma.*/
+<property2> <duration2>,                          
 ...;
 
-transition: background-color 0.15s,              #Transition both background color and text
-color 0.15s;                                      color over 0.15 seconds.
-
+transition: background-color 0.15s,              /*Transition both background color and text color over 0.15 seconds.*/
+color 0.15s;
+                                
 box-shadow: <h-position> <v-position> <blur> <color>;
-box-shadow: 3px 4px 5px black;                   #Creates a shadow that's 3px to the right of
+box-shadow: 3px 4px 5px black;                   /*Creates a shadow that's 3px to the right of
                                                   the element, 4px to the bottom, with 5px of
-                                                  blur, and color of black.
+                                                  blur, and color of black.*/
 
-box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.15);       #Creates a shadow that's 3px to the right,
+box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.15);       /*Creates a shadow that's 3px to the right,
                                                   4px to the bottom, with no blur,
-                                                  and a very faint black color.
+                                                  and a very faint black color.*/
 }
 ```
 <h3>CSS Box Model</h3>
@@ -132,55 +131,55 @@ box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.15);       #Creates a shadow that's 3px to
 ```css
 .join-button {
 
-margin-right: 10px;                             #Add 10px of space on the outside of the element.
+margin-right: 10px;                             /*Add 10px of space on the outside of the element.*/
 margin-left: 10px;
 margin-top: 10px;
-margin-bottom: 10px;                            #Normal margin pushes things away from an element.
-margin-right: -20px;                            #Negative margin pulls things towards an element like this:
+margin-bottom: 10px;                            /*Normal margin pushes things away from an element.*/
+margin-right: -20px;                            /*Negative margin pulls things towards an element like this*/
 
-margin: 10px;                                   #Shorthand for adding 10px of margin on all sides.
-margin: 10px 20px;                              #Add 10px of margin top & bottom and 20px left & right
+margin: 10px;                                   /*Shorthand for adding 10px of margin on all sides.*/
+margin: 10px 20px;                              /*Add 10px of margin top & bottom and 20px left & right*/
 margin: <top> <left & right> <bottom>;
 margin: <top> <right> <bottom> <left>;
 
-padding-right: 10px;                            #Add 10px of space on the inside of the element.
+padding-right: 10px;                            /*Add 10px of space on the inside of the element.*/
 padding-left: 10px;
 padding-top: 10px;
 padding-bottom: 10px;
-padding-right: -20px;                           #Negative padding has no effect.
+padding-right: -20px;                           /*Negative padding has no effect.*/
 
-padding: 10px;                                  #Shorthand for adding 10px of padding on all sides.
-padding: 10px 20px;                             #Add 10px of padding top & bottom and 20px left & right
+padding: 10px;                                  /*Shorthand for adding 10px of padding on all sides.*/
+padding: 10px 20px;                             /*Add 10px of padding top & bottom and 20px left & right*/
 padding: <top> <left & right> <bottom>;
 padding: <top> <right> <bottom> <left>;
 
-border-width: 1px;                              #Sets the border width.
-border-style: solid;                            #Sets the border style (to a solid color).
-border-color: red;                              #Sets the border color.
-border: <width> <style> <color>;                #Shorthand for the 3 properties above.
+border-width: 1px;                              /*Sets the border width.*/
+border-style: solid;                            /*Sets the border style (to a solid color).*/
+border-color: red;                              /*Sets the border color.*/
+border: <width> <style> <color>;                /*Shorthand for the 3 properties above.*/
 border: 1px solid red;
 }
 ```
 Text(paragraph) creating and styling:
 ```html
-<p>paragraph of text</p>   #Creates a paragraph of text.
+<p>paragraph of text</p>   <!--Creates a paragraph of text.-->
 ```
 ```css
 .title {
-font-family: Arial;                              #Change the font.
-font-family: Roboto, Verdana, Arial;             #A font-stack: if Roboto is not available, it will
+font-family: Arial;                              /*Change the font.*/
+font-family: Roboto, Verdana, Arial;             /*A font-stack: if Roboto is not available, it will
                                                   fall back to Verdana. If Verdana is not
-                                                  available it will fall back to Arial.
-font-size: 30px;                                 #Change text size.
-font-weight: bold;                               #Change text thickness.
-font-weight: 700;                                #Another way to specify font-weight. We can use: 100, 200,
-                                                  300, ..., 900. bold = 700, regular = 400, semibold = 500
+                                                  available it will fall back to Arial.*/
+font-size: 30px;                                 /*Change text size.*/
+font-weight: bold;                               /*Change text thickness.*/
+font-weight: 700;                                /*Another way to specify font-weight. We can use: 100, 200,
+                                                  300, ..., 900. bold = 700, regular = 400, semibold = 500*/
 
 font-style: italic;
-text-align: center;                              #Other values we can use: left, right, justified
-line-height: 24px;                               #Adjust space between lines of text.
-text-decoration: underline;                      #Underlines the text.
-text-decoration: none;                           #Removes underline.
+text-align: center;                              /*Other values we can use: left, right, justified*/
+line-height: 24px;                               /*Adjust space between lines of text.*/
+text-decoration: underline;                      /*Underlines the text.*/
+text-decoration: none;                           /*Removes underline.*/
 }
 ```
 Text Elements (also called Inline Elements):
@@ -215,19 +214,19 @@ margin-bottom: 16px;
 
 Image creating and styling:
 ```html
-<img src="image.png">   #Loads an image "image.png" beside the HTML file.
+<img src="image.png">   <!--Loads an image "image.png" beside the HTML file.-->
 ```
 ```css
 .image {
-width: 300px;                             #Resizes the image to a width of 300px. Height will also
-                                           resize to keep the image's dimensions.
-height: 300px;                            #If both width and height are set, the image may stretch.
+width: 300px;                             /*Resizes the image to a width of 300px. Height will also
+                                           resize to keep the image's dimensions.*/
+height: 300px;                            /*If both width and height are set, the image may stretch.*/
 
-object-fit: cover;                        #Enlarges the image to cover the entire width * height area
-                                           without stretching or distorting.
-object-fit: contain;                      #Shrinks the image so that it's contained in the width * height area.
+object-fit: cover;                        /*Enlarges the image to cover the entire width * height area
+                                           without stretching or distorting.*/
+object-fit: contain;                      /*Shrinks the image so that it's contained in the width * height area.*/
 
-object-position: left;                    #Determines where the image is positioned in the width *height area.
+object-position: left;                    /*Determines where the image is positioned in the width *height area.*/
 object-position: right;
 object-position: top;
 object-position: bottom;
@@ -236,25 +235,25 @@ object-position: bottom;
 
 Inputs:
 ```html
-<input type="text" placeholder="Search">       #Creates a text box and adds a placeholder (a label) to the text box.
-<input type="checkbox">                        #Creates a checkbox.
+<input type="text" placeholder="Search">       <!--Creates a text box and adds a placeholder (a label) to the text box.-->
+<input type="checkbox">                        <!--Creates a checkbox.-->
 ```
 ```css
 .search-bar {
-font-size: 30px;                               #Changes the font-size when typing into the text box.
+font-size: 30px;                               /*Changes the font-size when typing into the text box.*/
 }
 .search-bar::placeholder { 
-font-size: 30px;                               #Changes the font-size of the placeholder.  
+font-size: 30px;                               /*Changes the font-size of the placeholder.*/
 }
 ```
 
 CSS Display Property:
 ```css
 .element {
-display: block;                               #Element will take up the entire line in its container.
-display: inline-block;                        #Element will only take up as much space as needed.
-vertical-align: middle;                       #Determines vertical alignment of inline-block elements.
-display: inline;                              #Element will appear within a line of text (a text element).
+display: block;                               /*Element will take up the entire line in its container.*/
+display: inline-block;                        /*Element will only take up as much space as needed.*/
+vertical-align: middle;                       /*Determines vertical alignment of inline-block elements.*/
+display: inline;                              /*Element will appear within a line of text (a text element).*/
 }
 ```
 
@@ -315,75 +314,76 @@ color: white;
 CSS Grid:
 ```css
 .grid {
-display: grid;                                 #Turns an element into a grid container.
-grid-template-columns: 100px 100px;            #Sets how many columns are in the grid and how wide the columns are.
-column-gap: 20px;                              #Sets space between the columns.
-row-gap: 40px;                                 #Sets space between the rows.
+display: grid;                                 /*Turns an element into a grid container.*/
+grid-template-columns: 100px 100px;            /*Sets how many columns are in the grid and how wide the columns are.*/
+column-gap: 20px;                              /*Sets space between the columns.*/
+row-gap: 40px;                                 /*Sets space between the rows.*/
 }
 
 .grid {
 display: grid;
-grid-template-columns: 100px 1fr;              #1fr = the column will take up the remaining
-                                                amount of space in the grid container.
+grid-template-columns: 100px 1fr;              /*1fr = the column will take up the remaining
+                                                amount of space in the grid container.*/
 
-grid-template-columns: 1fr 1fr;                #The columns will take up an equal amount of the
-                                                remaining space (since they're both 1fr).
+grid-template-columns: 1fr 1fr;                /*The columns will take up an equal amount of the
+                                                remaining space (since they're both 1fr).*/
 
-grid-template-columns: 1fr 2fr;                #The number in front of fr = relatively how much space the column gets.
-                                                Here, the 2nd column gets twice the amount of space as the 1st.
+grid-template-columns: 1fr 2fr;                /*The number in front of fr = relatively how much space the column gets.
+                                                Here, the 2nd column gets twice the amount of space as the 1st.*/
 
-justify-content: center;                       #Aligns the columns horizontally in the center.
-justify-content: space-between;                #Spread out the columns evenly horizontally.
+justify-content: center;                       /*Aligns the columns horizontally in the center.*/
+justify-content: space-between;                /*Spread out the columns evenly horizontally.*/
 
-align-items: center;                           #Aligns the columns vertically in the center.
+align-items: center;                           /*Aligns the columns vertically in the center.*/
 }
 ```
 
 Flexbox:
 ```css
 .flexbox {
-display: flex;                               #Turns an element into a flexbox container.
-flex-direction: row;                         #Lays out elements horizontally inside the flexbox. Usually we don't need to
-                                              specify flex-direction: row; because it is the default value.
+display: flex;                               /*Turns an element into a flexbox container.*/
+flex-direction: row;                         /*Lays out elements horizontally inside the flexbox. Usually we don't need to
+                                              specify flex-direction: row; because it is the default value.*/
 
-justify-content: center;                     #Centers the elements in the flexbox horizontally.
-justify-content: space-between;              #Spreads out the elements in the flexbox evenly across the horizontal space.
+justify-content: center;                     /*Centers the elements in the flexbox horizontally.*/
+justify-content: space-between;              /*Spreads out the elements in the flexbox evenly across the horizontal space.*/
 
-align-items: center;                         #Centers the elements in the flexbox vertically.
-align-items: space-between;                  #Spreads out elements evenly in the vertical space.
+align-items: center;                         /*Centers the elements in the flexbox vertically.*/
+align-items: space-between;                  /*Spreads out elements evenly in the vertical space.*/
 } 
  
 .element-inside-flexbox { 
-width: 100px;                                #Sets the width of the flexbox element to 100px.
-flex: 1;                                     #Take up the remaining amount of space. The value 1 determines relatively how much space.
-flex-shrink: 0;                              *Don't shrink the element when resizing. Allow the element to shrink down when resizing.
+width: 100px;                                /*Sets the width of the flexbox element to 100px.*/
+flex: 1;                                     /*Take up the remaining amount of space. The value 1 determines relatively how much space.*/
+flex-shrink: 0;                              /* *Don't shrink the element when resizing. Allow the element to shrink down when resizing.*/
 width: 0;
 }
 ```
 
 ```html
-<div style="                                      #Creates a flexbox where elements are placed
-display: flex;                                     horizontally (flex-direction: row; is the default
-flex-direction: row;                               so it's not mandatory to have that in the CSS)
+<div style="                                      
+display: flex;                                     
+flex-direction: row;                               
 ">
+<!--Creates a flexbox where elements are placed horizontally (flex-direction: row; is the default so it's not mandatory to have that in the CSS)-->
 
-<p style="width: 100px;">Flexbox element 1</p>      #This element has a width of 100px.
+<p style="width: 100px;">Flexbox element 1</p>      <!--This element has a width of 100px.-->
 
-<p style="flex: 1;">Flexbox element 2</p>           #This element takes up 1/3 of the remaining space.
+<p style="flex: 1;">Flexbox element 2</p>           <!--This element takes up 1/3 of the remaining space.-->
 
-<p style="flex: 2;">Flexbox element 2</p>           #This element takes up 2/3 of the remaining space.
+<p style="flex: 2;">Flexbox element 2</p>           <!--This element takes up 2/3 of the remaining space.-->
 </div>
 ```
 ```css
 .flexbox {
-display: flex;                                   #Lays out elements vertically inside the flexbox. Also,
-flex-direction: column;                           justify-content and align-items are reversed.
+display: flex;                                   /*Lays out elements vertically inside the flexbox. */
+flex-direction: column;                          /*Also, justify-content and align-items are reversed.*/
  
-justify-content: center;                         #Centers elements vertically inside the flexbox.
-justify-content: space-between;                  #Spreads out elements evenly in the vertical space.
+justify-content: center;                         /*Centers elements vertically inside the flexbox.*/
+justify-content: space-between;                  /*Spreads out elements evenly in the vertical space.*/
 
-align-items: center;                             #Centers elements horizontally.
-align-items: space-between;                      #Spreads out elements evenly horizontally.
+align-items: center;                             /*Centers elements horizontally.*/
+align-items: space-between;                      /*Spreads out elements evenly horizontally.*/
 }   
 ```
 
@@ -396,23 +396,23 @@ CSS Position:
 
 ```css
 .element {
-position: static;         #This is the default value that every element starts with.
+position: static;         /*This is the default value that every element starts with.*/
 }
 ```
 
 ```css
 .fixed {
-position: fixed;                    #Positions the element in the browser window (sticks to the page while scrolling).
+position: fixed;                    /*Positions the element in the browser window (sticks to the page while scrolling).*/
 
-top: 0;                             #Places the element 0px from the top of the browser window.
-bottom: 10px;                       #10px from the bottom of the browser window.
-left: 50px;                         #50px from the left of the browser window.
-right: 100px;                       #100px from the right of the browser window.
+top: 0;                             /*Places the element 0px from the top of the browser window.*/
+bottom: 10px;                       /*10px from the bottom of the browser window.*/
+left: 50px;                         /*50px from the left of the browser window.*/
+right: 100px;                       /*100px from the right of the browser window.*/
 
-top: -5px;                          #Using negative pixels places the element beyond the top edge.
+top: -5px;                          /*Using negative pixels places the element beyond the top edge.*/
 
-width: 100px;                       #Sets the element's width to 100px.
-height: 100px;                      #Sets the element's height to 100px.
+width: 100px;                       /*Sets the element's width to 100px.*/
+height: 100px;                      /*Sets the element's height to 100px.*/
 }
 
 ```
