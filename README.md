@@ -437,5 +437,29 @@ right: 100px;                                 /*100px from the right of the page
 width: 100px;                                 /*Sets the element's width to 100px.*/
 height: 100px;                                /*Sets the element's height to 100px.*/
 }
+```
+Position Absolute Inside Position Fixed:
 
+● When a position: absolute element is inside a position: fixed element, it will be
+positioned relative to the fixed element.
+
+● This rule also applies to any position value that is not position: static.
+
+● This lets us place elements in the corners of other elements. For example, a "Close"
+button in the top-right corner
+
+```html
+<div style="
+position: fixed;
+width: 100px;
+">
+<button style="
+position: absolute;                      <!--The position: absolute element will be placed in the
+                                          top-right of the position: fixed element.-->
+top: 0;
+right: 0;
+">
+X
+</button>
+</div>
 ```
