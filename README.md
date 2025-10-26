@@ -394,6 +394,8 @@ CSS Position:
 
 ● Create elements that appear on top of other elements.
 
+Position fixed:
+
 ```css
 .element {
 position: static;         /*This is the default value that every element starts with.*/
@@ -422,3 +424,18 @@ height: 100px;                      /*Sets the element's height to 100px.*/
 the page.
 * When using top/bottom/left/right the element will resize
 with the page.
+
+Position Absolute:
+```css
+.absolute {
+position: absolute;                           /*Positions the element on the page (it will scroll with the page and
+                                                will not stick when scrolling).*/
+top: 0;                                       /*Places the element 0px from the top of the page.*/
+bottom: 10px;                                 /*10px from the bottom of the page.*/
+left: 50px;                                   /*50px from the left of the page.*/
+right: 100px;                                 /*100px from the right of the page.*/
+width: 100px;                                 /*Sets the element's width to 100px.*/
+height: 100px;                                /*Sets the element's height to 100px.*/
+}
+
+```
