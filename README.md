@@ -454,8 +454,7 @@ position: fixed;
 width: 100px;
 ">
 <button style="
-position: absolute;                      <!--The position: absolute element will be placed in the
-                                          top-right of the position: fixed element.-->
+position: absolute;                      
 top: 0;
 right: 0;
 ">
@@ -463,3 +462,44 @@ X
 </button>
 </div>
 ```
+*The position absolute element will be placed in the top-right of the position fixed element.
+
+Position Relative:
+```css
+.relative {
+position: relative;                       /*The element will appear normally (as if it's position: static).
+                                            We can then push it around with top/bottom/left/right.*/
+top: 10px;                                /*Places the element 10px from the top of its original position(pushes it down by 10px).
+                                            Unlike margin, it won't push the rest of the page down.*/
+bottom: 10px;                             /*Places the element 10px from the bottom of its original position (pushes it up by 10px).*/
+
+left: 50px;                               /*Places the element 50px from the left of its original position.*/
+right: 100px;                             /*Places the element 100px from the right of its original position.*/
+width: 100px;                             /*Sets the element's width to 100px.*/
+height: 100px;                            /*Sets the element's height to 100px.*/
+}
+```
+
+Position Absolute Inside Position Relative:
+
+● When a position: absolute element is inside a position: relative element, it will
+be positioned relative to the relative element.
+
+● Useful if we want to display an element normally (using position: relative), but still
+be able to place other elements in the corner (using position: absolute).
+
+```html
+<div style="
+position: relative;
+width: 100px;
+">
+<button style="
+position: absolute;                 
+top: 0;
+right: 0;
+">
+3
+</button>
+</div>
+```
+*The position absolute element will be placed in the top-right of the position relative element
