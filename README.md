@@ -503,3 +503,30 @@ right: 0;
 </div>
 ```
 *The position absolute element will be placed in the top-right of the position relative element
+
+
+z-index:  Determines which elements appear in front and behind:
+
+● Elements with a higher z-index appear in front of elements with a lower z-index. The
+default z-index is 0.
+
+● Elements with position: static; always appear at the back. z-index has no effect.
+
+● If the z-index is equal or both elements are position: static, the element that was
+written later in the code will appear in front.
+```css
+.fixed {
+position: fixed;                        /*This element will appear in front of the position: absolute;
+                                         element because it has a higher z-index.*/
+z-index: 2;
+}
+.absolute {
+position: absolute;
+z-index: 1;
+}
+.static {
+position: static;                      /*This element will appear at the back since it's position static.*/
+}
+
+
+```
