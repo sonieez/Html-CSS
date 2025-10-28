@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="sidebar.css">
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="left-section">
         <img class="hamburger-menu" src="https://supersimple.dev/exercises/youtube/icons/hamburger-menu.svg">
         <img class="youtube-logo" src="https://supersimple.dev/exercises/youtube/icons/youtube-logo.svg">
@@ -21,6 +21,7 @@
         <button class="search-button"><img class="search-icon" src="https://supersimple.dev/exercises/youtube/icons/search.svg">
           <div class="tooltip">Search</div>
         </button>
+        <!--Put postion absolute inside position relative -->
         <button class="voice-search-button"><img class="voice-search-icon" src="https://supersimple.dev/exercises/youtube/icons/voice-search-icon.svg">
           <div class="tooltip">Search with your voice</div>
         </button>
@@ -44,9 +45,9 @@
         </div>
       </div>
       
-    </div>
+    </header>
 
-    <div class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-link">
         <img src="https://supersimple.dev/exercises/youtube/icons/home.svg">
         <div>Home</div>
@@ -71,9 +72,10 @@
         <img src="https://supersimple.dev/exercises/youtube/icons/library.svg">
         <div>Library</div>
       </div>
-    </div>
+    </nav>
     
-    <div class="video-grid">
+    <main>
+      <section class="video-grid">
       <div class="video-preview">
       <div class="thumbnail-row">
         <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank"><img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp"></a>
@@ -175,7 +177,7 @@
         </div>
       </div>      
     </div>
-    </div>
-    
+      </section>
+    </main>
   </body>
 </html>
