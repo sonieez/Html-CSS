@@ -568,3 +568,39 @@ Advanced CSS Selectors:
 
 .class2:hover .tooltip { ... }        /*Target .tooltip only when hovering over elements with                                          class = "class2"*/
 ```
+Inheritance:
+
+A text property set on the outer element will be passed down into inner elements:
+```html
+<div style = "color: red;" >
+  <p> Paragraph </p>
+</div>
+>!--This paragraph will have red text.-->
+```
+*For global text styles (styles we want on the entire page), we can set them on the body
+
+CSS Specificity Rules:
+1. Inline CSS has higher priority than .class selectors.
+2. .class selectors have higher priority than element name selectors ( p ).
+3. Element name selectors ( p ) have higher priority than inheritance (from body ).
+4. If 2 selectors have the same priority, the one that is written later wins.
+
+
+
+Semantic Elements:
+
+Elements that work the same way as div . However, they also give the HTML meaning when
+screen readers, search engines, or other devices read the website.
+Common semantic elements include:  header , nav , main , section , etc.
+
+
+Other CSS Properties:
+
+Here are some other CSS properties that were covered in the course.
+```css
+.tooltip {
+  pointer-events : none ;        /*Disables all interactions with the mouse (clicks, hovers) */
+  white-space : nowrap ;       /*Prevents the text inside the element from wrapping to
+                              multiple lines.*/
+}
+```
