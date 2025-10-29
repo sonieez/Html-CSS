@@ -525,8 +525,46 @@ position: absolute;
 z-index: 1;
 }
 .static {
-position: static;                      /*This element will appear at the back since it's position static.*/
+position: static;                      /*This element will appear at the back since it's                                                 position static.*/
 }
+```
 
+Responsive Design:
 
+Responsive design = making the website look good on any screen size.
+```css
+@media ( max-width : 750px ) {
+  .element {
+    width : 350px ;                                 
+  }
+}
+/*Only apply the CSS code below when screen width is between 0px - 750px.*/
+
+@media ( min-width : 750.02px ) and ( max-width : 1000px ) {
+  .element {
+    width : 450px ;
+  }
+}
+/*Only apply this CSS code when screen width is between 750px - 1000px.*/
+
+@media ( min-width : 1000.02px ) {
+  .element {
+    width : 600px ;
+  }
+}
+/*Only apply this CSS code when the screen width is over 1000px.*/
+```
+
+Advanced CSS Selectors:
+```css
+/*With Comma*/
+.class1 , .class2 { ... }             /*Target multiple classes at the same time.*/
+.class1 , p { ... }                   /*Target a class and all <p> s at the same time.*/
+
+/*With Space*/
+.class1 img { ... }                   /*Target img's that are inside elements with
+                                      class = "class1"*/                       
+.class2 .tooltip { ... }              /*Target  .tooltip inside elements with class = "class2"*/
+
+.class2:hover .tooltip { ... }        /*Target .tooltip only when hovering over elements with                                          class = "class2"*/
 ```
