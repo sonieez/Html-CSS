@@ -81,6 +81,8 @@ border-width: 1px;                                   /*Sets the border width.*/
 
 </style>
 ```
+<hr>
+
 CSS Pseudo-Classes:
 ```css
 .subscribe-button:hover {                       /*These styles only apply when hovering over an element with class="subscribe-button"*/
@@ -90,6 +92,9 @@ CSS Pseudo-Classes:
 ...
 }
 ```
+
+<hr>
+
 Intermediate CSS Properties:
 ```css
 .subscribe-button {
@@ -120,6 +125,8 @@ box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.15);       /*Creates a shadow that's 3px t
                                                   and a very faint black color.*/
 }
 ```
+<hr>
+
 <h3>CSS Box Model</h3>
 
 1. Margin = space on the outside 
@@ -160,6 +167,8 @@ border: <width> <style> <color>;                /*Shorthand for the 3 properties
 border: 1px solid red;
 }
 ```
+<hr>
+
 Text(paragraph) creating and styling:
 ```html
 <p>paragraph of text</p>   <!--Creates a paragraph of text.-->
