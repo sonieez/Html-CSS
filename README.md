@@ -22,14 +22,13 @@ This repo contains of notes I've taken during my learning html and css.
 <h3>CSS Structure</h3>
 One way of writing CSS code is using the <style> HTML element.
 <hr>
-*Attributes modify how an HTML element behaves.
-
 
 Creating links:  
 ```html
 <a href="https://youtube.com" target="_blank">Link to YouTube</a>
 ```
 *target="_blank" causes the link to be opened in a new tab.
+<hr>
 
 Class attribute(lets us target specific elements with CSS):
 ```html
@@ -46,6 +45,8 @@ Class attribute(lets us target specific elements with CSS):
 ```html
 <button class="youtube-button subscribe-button">SUBSCRIBE</button>
 ```
+*Attributes modify how an HTML element behaves.
+<hr>
 
 Buttons creating and styling:
 ```html
