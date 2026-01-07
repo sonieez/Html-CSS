@@ -221,6 +221,7 @@ margin-bottom: 0;
 margin-bottom: 16px;
 }
 ```
+<hr>
 
 Image creating and styling:
 ```html
