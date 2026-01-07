@@ -322,6 +322,8 @@ color: white;
 ...
 </div>
 ```
+<hr>
+
 CSS Grid:
 ```css
 .grid {
